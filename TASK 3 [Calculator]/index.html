@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+</head>
+<style>
+    #main {
+        overflow: hidden;
+        width: 300px;
+        height: 280px;
+        background-color: #0b0a0a;
+
+    }
+    input {
+        width: 20%;
+        height: 40px;
+        font-size: 20px;
+        margin: 6px;
+    }
+    #display{
+        width: 96%;
+        height: 50px;
+        background-color: silver;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <form name="f">
+            <input name="dd" type="text" placeholder="0" id="display">
+            <br>
+            <input type="button" value="1" onclick="f.dd.value+=1">
+            <input type="button" value="2" onclick="f.dd.value+=2">
+            <input type="button" value="3" onclick="f.dd.value+=3">
+            <input type="button" value="+" onclick="add()">
+            <br>
+            <input type="button" value="4" onclick="f.dd.value+=4">
+            <input type="button" value="5" onclick="f.dd.value+=5">
+            <input type="button" value="6" onclick="f.dd.value+=6">
+            <input type="button" value="-" onclick="sub()">
+            <br>
+            <input type="button" value="7" onclick="f.dd.value+=7">
+            <input type="button" value="8" onclick="f.dd.value+=8">
+            <input type="button" value="9" onclick="f.dd.value+=9">
+            <input type="button" value="/" onclick="div()">
+            <br>
+            <input type="button" value="C" onclick="f.dd.value=''">
+            <input type="button" value="0" onclick="f.dd.value+=1">
+            <input type="button" value="=" onclick="f.dd.value=eval(f.dd.value)">
+            <input type="button" value="x" onclick="mul()">
+            
+        </form>
+    </div>
+    <script>
+        function add(){
+            var act = 0 , b=0;
+            act = f.dd.value;
+            b = act.charAt(act.length-1);
+            if(b=='+' || b=='-' || b=='/' || b=='*' ){
+                f.dd.value = act.substring(0 , act.length-1);
+                f.dd.value += '+';
+            } else {
+                f.dd.value+='+'
+            }
+        }
+
+        function sub(){
+            var act = 0 , b=0;
+            act = f.dd.value;
+            b = act.charAt(act.length-1);
+            if(b=='+' || b=='-' || b=='/' || b=='*' ){
+                f.dd.value = act.substring(0 , act.length-1);
+                f.dd.value += '-';
+            } else {
+                f.dd.value+='-'
+            }
+        }
+
+        function div(){
+            var act = 0 , b=0;
+            act = f.dd.value;
+            b = act.charAt(act.length-1);
+            if(b=='+' || b=='-' || b=='/' || b=='*' ){
+                f.dd.value = act.substring(0 , act.length-1);
+                f.dd.value += '/';
+            } else {
+                f.dd.value+='/'
+            }
+        }
+        function mul(){
+            var act = 0 , b=0;
+            act = f.dd.value;
+            b = act.charAt(act.length-1);
+            if(b=='+' || b=='-' || b=='/' || b=='*' ){
+                f.dd.value = act.substring(0 , act.length-1);
+                f.dd.value += '*';
+            } else {
+                f.dd.value+='*'
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

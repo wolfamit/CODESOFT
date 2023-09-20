@@ -1,0 +1,723 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Oswald:wght@300&family=Playfair+Display&family=Poppins:wght@100;400&display=swap");
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  text-decoration: none;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
+  font-family: "Poppins", sans-serif;
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  object-fit: cover;
+}
+
+/* 
+=================
+   navigation
+=================
+ */
+
+.nav {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: azure;
+  font-family: "Poppins", sans-serif;
+  /* font-size: 2rem; */
+  margin: 1vh 10vw;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.nav a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-weight: 1em;
+  padding-top: 10px;
+  justify-items: normal;
+}
+
+.nav-bar li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: lighter;
+  padding-left: 30px;
+  list-style: none;
+}
+
+/*
+==================================
+head with logo, desc and searchbar 
+===================================
+
+*/
+
+.head {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  object-fit: contain;
+  transform: none;
+  opacity: 1;
+  width: 30%;
+  margin-top: 3rem;
+  color: white;
+  display: flex;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  align-items: center;
+  color: azure;
+  flex-wrap: wrap;
+}
+
+.head h3 {
+  display: flex;
+  align-items: center;
+  font-size: 2.1rem;
+  text-align: center;
+  flex-wrap: wrap;
+  color: white;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*
+====================
+ Search bar styling 
+====================
+ */
+
+
+
+.search {
+  width: calc(100% - 10em);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: flex-start;
+}
+
+
+.search-tile {
+  display: flex;
+  width: 100%;
+  height: 3em;
+  background: rgb(255, 255, 255);
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  box-shadow: rgba(28, 28, 28, 0.05) 0px 8px 12px;
+  margin-bottom: 0.8rem;
+}
+
+.search-left,
+.search-right {
+  width: 100%;
+  display: flex;
+  padding: 2em 1em;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  letter-spacing: 1px;
+}
+
+.fa-location-dot 
+.fa-magnifying-glass,
+.fa-caret-down 
+{
+  font-size: 1.5rem;
+}
+
+.fa-location-dot {
+  color: red;
+  opacity: 0.5;
+}
+
+.fa-caret-down {
+  padding: 0 10px;
+  color: gray;
+}
+
+
+/* 
+=================
+ Middle section 
+=================
+ */
+.middle {
+  position: relative;
+  max-width: 110rem;
+  max-height: initial;
+  margin: 1em 5em;
+}
+
+.sec-1 {
+  width: 100%;
+  display: flex;
+  margin: 2em 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.boxes {
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 30%;
+  padding: 0 10px 10px 0;
+}
+
+ a {
+  text-decoration: none;
+}
+
+
+.box {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  width: 100%;
+  height: 24rem;
+  outline: 1px solid rgba(208, 201, 201, 0.445);
+  transition: .1s;
+}
+
+.box:hover{
+ -webkit-transform: scale(1.03) ;
+  
+}
+
+.white {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+  border-radius: 0 0 1em 1em;
+  overflow: hidden;
+  background-color: white;
+  padding: 0 2rem 1rem 1.5rem;
+  box-sizing: border-box;
+  
+}
+
+.white strong {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #363636;
+  font-weight: 500;
+
+}
+
+.white p {
+  color: #4F4F4f;
+  font-weight: 400;
+
+}
+
+
+
+
+
+/*
+===================
+section-2 of middle
+===================
+*/
+
+
+.sec-2 h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sec-2 div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+
+.sec-2 span , .sec-2 span i {
+  color: rgb(246, 76, 24);
+  cursor: pointer;
+}
+
+
+.sec-2 h6 {
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: lighter;
+  color: rgb(99, 99, 98);
+}
+
+.sec2-children {
+  margin: 2em 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  flex-grow: 0 !important;
+  cursor: pointer;
+  flex-shrink: 0 !important;
+  -webkit-box-flex: 0;
+  margin: 0 1em 2em 0;
+  flex-basis: 23%;
+  transition: .8s linear;
+  height: 20em;
+}
+
+.social-links a , .card a{
+    text-decoration: none;
+  
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  z-index: -1;
+ 
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(2,2,2,0.1), rgba(2,2,2,0.9));
+  position: absolute;
+  top: 0; 
+  left: 0;
+
+}
+
+.card .sub-title{
+  padding: 0 1em 1em 1em;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  color: #FFFF;
+}
+.card .sub-title:first-child {
+  overflow: hidden;
+  font-weight: 400;
+}
+.card .sub-title:last-child {
+  font-weight: 200;
+}
+
+
+
+/*
+====================
+localities around 
+=====================
+
+*/
+
+.title{
+  font-size: 2rem;
+  font-weight:100;
+}
+
+
+.bold {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+
+.box-3, .box-2 {
+  display:grid;
+  gap: 2em;
+  grid-auto-flow: row;
+  flex-grow: 1;
+}
+
+.box-3 .col , .box-2 .col {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 18px 22px ;
+  width: 100%;
+  box-shadow: rgba(28, 28, 28, .09) 0px 2px 3px;
+  height: 100%;
+
+}
+
+/*  
+  ===================
+    Contact Form 
+  ===================
+
+*/
+
+.sec-4{
+  padding-block: 5em ;
+  width: 100%;
+  margin: 5em 0;
+  background:linear-gradient(5turn, #9493cf, #ebf8e1e1, #f63f3c);
+}
+
+
+.sec-4 .wrapper{
+  padding: 5rem 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.address {
+  height: fit-content;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+
+}
+
+.sec-4 h2 {
+
+  text-align: start;
+  font-size: 3rem;
+  font-weight: 400;
+
+}
+
+.sec-4 p {
+  text-align: start;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+
+.flex-radio{
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* 
+Radio buttons Styling
+Text input
+red button
+download app links
+*/
+
+
+.input{
+  font-size: 1.3rem;
+  padding-right: 1em;
+  background-color: none;
+}
+
+input[type="radio"] {
+  position: relative;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+
+}
+
+input[type="radio"]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 42%;
+  margin-top: -8px;
+  border: 2px solid #fd0606;
+  border-radius: 50%;
+
+}
+
+
+
+input[type="radio"]:checked{
+    position: relative;
+}
+
+input[type="radio"]:checked::after{
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0;
+    margin: auto auto;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #f63f3c;
+
+}
+
+
+
+.flex-input{
+  display: flex;
+  -webkit-box-align: start;
+  align-items: center;
+  margin-top: 1em;
+  gap: 1em;
+}
+
+
+.flex-input input {
+  padding: 13px 12px;
+  border: .5px solid #6f6d6d;
+  border-radius:5px;
+  color: #FFFF;
+  font-weight: 300;
+}
+
+.flex-input button {
+  border: none;
+  cursor: pointer;
+  background: #f63f3c;
+  color: #FFFF;
+  border-radius: 5px;
+  padding:12px 18px ;
+
+}
+
+.flex-app{
+  margin: 0;
+  display: flex;
+
+}
+
+.flex-app img {
+  cursor: pointer;
+  height: 3rem;
+  width: 11rem;
+}
+/*  
+  ===================
+  Explore options near me 
+  ===================
+  
+*/
+
+.grey{
+  background-color: rgb(252, 252, 252);
+  padding: 5em 1em;
+}
+
+.grey h2 {
+  text-align: start;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.grey p {
+ font-size: 2rem;
+  font-weight: 400;
+  color: rgb(28, 28, 28);
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0px;
+}
+
+.sec-5 {
+  display: block;
+  gap: 2em;
+
+}
+
+/*  
+  ===================
+  footer options
+  ===================
+  
+*/
+
+.footer{
+  margin-top: 7rem;
+}
+.footer-logo img{
+  margin: 2rem 0;
+  width: 10rem;
+  image-rendering: -webkit-optimize-contrast;
+ 
+}
+
+
+
+
+.flex-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+.footer-header{
+  color: #000;
+  font-size: 1rem;
+  font-weight:400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer p {
+  font-stretch:wider ;
+  letter-spacing: 1px;
+  font-size: .9rem;
+  font-weight: 200;
+  color: #696969;
+}
+.footer p:hover{
+  cursor: pointer;
+  color: #4F4F4f;
+}
+
+
+.social-links a {
+  color: rgb(19, 18, 22);
+  font-size: 1.5rem;
+  
+}
+
+
+hr{
+  color: rgb(221,221,221);
+  margin: 2em 0;
+}
+
+
+.copyright {
+  margin: 2em 0 ;
+}
+
+
+
+/*
+===================
+   Media Queries
+==================
+*/
+
+@media screen and (min-width: 600px) {
+  .search{
+    display: flex;
+
+  }
+ 
+  .widht30{
+    border-radius: 10px 0 0 10px;
+  }
+
+  .width70{
+    border-radius: 0 10px 10px 0 ;
+  }
+  .box-2 {
+    grid-template-columns: repeat(3 , 1fr);
+
+  }
+
+}
+
+
+@media screen and (max-width: 700px) {
+  .nav {
+    display: none;
+  }
+  .head {
+    margin-top: 0;
+  }
+  .head h3 {
+    margin-top: 20px;
+    flex-grow: 1;
+    font-size: 2rem;
+    width: cal(100vw - 2rem);
+  }
+
+  .search {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-tile{
+    border-radius: 0.8rem;
+  }
+
+  .middle{
+    margin: 1em 1em;
+
+  }
+
+  .boxes{
+    max-width: 80%;
+    margin-bottom: 2em;
+  }
+  .card{
+     min-width: 40%;
+     margin: 0 1em 1em 0;
+    } 
+
+    .flex-row {
+      flex-direction: column;
+    }
+
+    .flex-contact img{
+      display: none;
+    }
+    .flex-input {
+      margin: 1em;
+      display: block;
+    }
+    .flex-app {
+      display: block;
+      padding: 1em;
+    }
+
+}
